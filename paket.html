@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+
+<title>Beli Voucher</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body background="img/bg.jpg">
+<nav class="navbar navbar-default example6 navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed tombol-nav" data-toggle="collapse" data-target="#navbar6">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand text-hide" href="login.html">Brand Text
+</a>
+</div>
+<div id="navbar6" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right ">
+$(if login-by)
+<li> <a href="status.html">Status</a><li>
+$(else)
+<li> <a href="login.html">Login</a><li>
+$(endif)
+<li><a href="paket.html" class="link-aktif">Beli Voucher</a></li>
+<li><a href="rumah.html" class="tanpa-link">Home Internet</a></li>
+
+<li class="dropdown">
+<a class="dropdown-toggle dodown" data-toggle="dropdown" href="#">Bantuan
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="aktivasi.html" class="tanpa-link">Cara Aktivasi</a></li>
+<li><a href="faq.html" class="tanpa-link">FAQ</a></li>
+<li><a href="support.html" class="tanpa-link">Tentang Kami</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!--Paket Voucher-->
+<div class="container">
+<div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 box-utama" style="padding:0px;">
+<img src="img/voucher.jpg" class="img-responsive"><br>
+
+
+<div class="col-md-3 col-sm-6">
+<div class="panel panel-primary border-hijau">
+<div class="panel-heading bg-hijau">
+<h3 class="panel-title">
+<font color="#fff"><b>PAKET NOOB</b></font>
+</h3>
+ </div>
+<div class="panel-body">
+<div class="the-price bg-hijau" style="margin-top:-25px;">
+<span class="rupiah">2.000</span>
+</div>
+<table class="table">
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Durasi 3 Jam</b></small>
+</td>
+</tr>
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Kuota : Unlimited</b></small>
+</td>
+</tr>
+<tr>
+<td>
+<button type="button" class="btn tombol-paket hijau btn-lg" data-toggle="modal" data-target="#myModal1">BELI
+PAKET</button>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-sm-6">
+<div class="panel panel-primary border-biru">
+<div class="panel-heading bg-biru">
+<h3 class="panel-title">
+<font color="#fff"><b>PAKET NOVICE</b></font>
+</h3>
+</div>
+<div class="panel-body">
+<div class="the-price bg-biru" style="margin-top:-25px;">
+<span class="rupiah">5.000</span>
+</div>
+<table class="table">
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Durasi 1 Hari</b></small>
+</td>
+</tr>
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Kuota : Unlimited</b></small>
+</td>
+</tr>
+<tr>
+<td>
+<button type="button" class="btn tombol-paket biru btn-lg" data-toggle="modal" data-target="#myModal2">BELI
+PAKET</button>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-sm-6">
+<div class="panel panel-primary border-merah">
+<div class="panel-heading bg-merah">
+<h3 class="panel-title">
+<font color="#fff"><b>PAKET ADVANCED</b></font>
+</h3>
+</div>
+<div class="panel-body">
+<div class="the-price bg-merah" style="margin-top:-25px;">
+<span class="rupiah">20.000</span>
+</div>
+<table class="table">
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Durasi 7 Hari</b></small>
+</td>
+</tr>
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Kuota : Unlimited</b></small>
+</td>
+</tr>
+<tr>
+<td>
+<button type="button" class="btn tombol-paket merah btn-lg" data-toggle="modal" data-target="#myModal3">BELI
+PAKET</button>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-sm-6">
+<div class="panel panel-primary border-orange">
+<div class="panel-heading bg-orange">
+<h3 class="panel-title">
+<font color="#fff"><b>PAKET PRO</b></font>
+</h3>
+</div>
+<div class="panel-body">
+<div class="the-price bg-orange" style="margin-top:-25px;">
+<span class="rupiah">50.000</span>
+</div>
+<table class="table">
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Durasi 30 Hari</b></small>
+</td>
+</tr>
+
+<tr>
+<td style="font-weight:normal;">
+<small><b>Kuota : Unlimited</b></small>
+</td>
+</tr>
+<tr>
+<td>
+<button type="button" class="btn tombol-paket orange btn-lg" data-toggle="modal" data-target="#myModal4">BELI
+PAKET</button>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!--/End Paket Voucher-->
+
+<div id="myModal1" class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog center">
+<div class="modal-content" style="border-radius:0px;">
+<div class="modal-body">
+<center>
+<h5><b>
+<font color="#DF1A23"><span class="	glyphicon glyphicon-question-sign"></span> Informasi
+Pembelian Voucher</font>
+</b></h5>
+</center>
+<small>
+<hr>
+<b><span class="glyphicon glyphicon-signal"></span> &nbsp; Nama : Paket Noob</b><br>
+<b><span class="glyphicon glyphicon-shopping-cart"></span> &nbsp; Harga Voucher : Rp.3.000,-</b><br>
+<b><span class="glyphicon glyphicon-time"></span> &nbsp; Durasi : 1 Hari</b><br>
+<b><span class="glyphicon glyphicon-hourglass"></span> &nbsp; Masa Aktif : 1 Hari (Dari awal aktivasi)</b><br>
+<b><span class="glyphicon glyphicon-tasks"></span> &nbsp; Kuota : Unlimited</b><br>
+<b><span class="glyphicon glyphicon-qrcode"></span> &nbsp; <u>Voucher Dapat Disimpan Selama Belum Di Aktivasi!</u></b><br>
+<hr>
+<b>Pembelian Voucher Hubungi:</b><br>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-phone"></span>
+&nbsp; Whatsapp : 081289914870</p>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-credit-card"></span>
+&nbsp; Metode Pembayaran :</p>
+<ul>
+<li>Tunai Maupun Digital</li>
+<li>Via OVO, DANA, LinkAja, Doku, Dll</li>
+</ul>
+</small>
+<br><br>
+<center><img src="img/logo.png" class="img-responsive" style="width:120px;" />
+</center>
+</div>
+</div>
+<br>
+<center><button style="width:30%; background:#FF8000; border:none; border-radius:0px;" type="button" class="btn btn-danger" data-dismiss="modal"><b><span class="	glyphicon glyphicon-remove"></span> TUTUP</b></button></center>
+</div>
+</div>
+
+
+<div id="myModal2" class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog center">
+<div class="modal-content" style="border-radius:0px;">
+<div class="modal-body">
+<center>
+<h5><b>
+<font color="#DF1A23"><span class="	glyphicon glyphicon-question-sign"></span> Informasi
+Pembelian Voucher</font>
+</b></h5>
+</center>
+<small>
+<hr>
+<b><span class="glyphicon glyphicon-signal"></span> &nbsp; Nama : Paket Novice</b><br>
+<b><span class="glyphicon glyphicon-shopping-cart"></span> &nbsp; Harga Voucher : Rp.5.000,-</b><br>
+<b><span class="glyphicon glyphicon-time"></span> &nbsp; Durasi : 2 Hari</b><br>
+<b><span class="glyphicon glyphicon-hourglass"></span> &nbsp; Masa Aktif : 2 Hari (Dari awal aktivasi)</b><br>
+<b><span class="glyphicon glyphicon-tasks"></span> &nbsp; Kuota : Unlimited</b><br>
+<b><span class="glyphicon glyphicon-qrcode"></span> &nbsp; <u>Voucher Dapat Disimpan Selama Belum Di Aktivasi!</u></b><br>
+<hr>
+<b>Pembelian Voucher Hubungi:</b><br>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-phone"></span>
+&nbsp; Whatsapp : 081289914870</p>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-credit-card"></span>
+&nbsp; Metode Pembayaran :</p>
+<ul>
+<li>Tunai Maupun Digital</li>
+<li>Via OVO, DANA, LinkAja, Doku, Dll</li>
+</ul>
+</small>
+<br><br>
+<center><img src="img/logo.png" class="img-responsive" style="width:120px;" />
+</center>
+</div>
+</div>
+<br>
+<center><button style="width:30%; background:#FF8000; border:none; border-radius:0px;" type="button" class="btn btn-danger" data-dismiss="modal"><b><span class="	glyphicon glyphicon-remove"></span> TUTUP</b></button></center>
+</div>
+</div>
+
+
+<div id="myModal3" class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog center">
+<div class="modal-content" style="border-radius:0px;">
+<div class="modal-body">
+<center>
+<h5><b>
+<font color="#DF1A23"><span class="	glyphicon glyphicon-question-sign"></span> Informasi
+Pembelian Voucher</font>
+</b></h5>
+</center>
+<small>
+<hr>
+<b><span class="glyphicon glyphicon-signal"></span> &nbsp; Nama : Paket Advanced</b><br>
+<b><span class="glyphicon glyphicon-shopping-cart"></span> &nbsp; Harga Voucher : Rp.15.000,-</b><br>
+<b><span class="glyphicon glyphicon-time"></span> &nbsp; Durasi : 7 Hari</b><br>
+<b><span class="glyphicon glyphicon-hourglass"></span> &nbsp; Masa Aktif : 7 Hari (Dari awal aktivasi)</b><br>
+<b><span class="glyphicon glyphicon-tasks"></span> &nbsp; Kuota : Unlimited</b><br>
+<b><span class="glyphicon glyphicon-qrcode"></span> &nbsp; <u>Voucher Dapat Disimpan Selama Belum Di Aktivasi!</u></b><br>
+<hr>
+<b>Pembelian Voucher Hubungi:</b><br>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-phone"></span>
+&nbsp; Whatsapp : 081289914870</p>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-credit-card"></span>
+&nbsp; Metode Pembayaran :</p>
+<ul>
+<li>Tunai Maupun Digital</li>
+<li>Via OVO, DANA, LinkAja, Doku, Dll</li>
+</ul>
+</small>
+<br><br>
+<center><img src="img/logo.png" class="img-responsive" style="width:120px;" />
+</center>
+</div>
+</div>
+<br>
+<center><button style="width:30%; background:#FF8000; border:none; border-radius:0px;" type="button" class="btn btn-danger" data-dismiss="modal"><b><span class="	glyphicon glyphicon-remove"></span> TUTUP</b></button></center>
+</div>
+</div>
+
+
+<div id="myModal4" class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog center">
+<div class="modal-content" style="border-radius:0px;">
+<div class="modal-body">
+<center>
+<h5><b>
+<font color="#DF1A23"><span class="	glyphicon glyphicon-question-sign"></span> Informasi
+Pembelian Voucher</font>
+</b></h5>
+</center>
+<small>
+<hr>
+<b><span class="glyphicon glyphicon-signal"></span> &nbsp; Nama : Paket Pro</b><br>
+<b><span class="glyphicon glyphicon-shopping-cart"></span> &nbsp; Harga Voucher : Rp.50.000,-</b><br>
+<b><span class="glyphicon glyphicon-time"></span> &nbsp; Durasi : 30 Hari</b><br>
+<b><span class="glyphicon glyphicon-hourglass"></span> &nbsp; Masa Aktif : 30 Hari (Dari awal aktivasi)</b><br>
+<b><span class="glyphicon glyphicon-tasks"></span> &nbsp; Kuota : Unlimited</b><br>
+<b><span class="glyphicon glyphicon-qrcode"></span> &nbsp; <u>Voucher Dapat Disimpan Selama Belum Di Aktivasi!</u></b><br>
+<hr>
+<b>Pembelian Voucher Hubungi:</b><br>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-phone"></span>
+&nbsp; Whatsapp : 081289914870</p>
+<p style="margin-top:5px; margin-bottom:5px; font-weight: bold;"><span class="glyphicon glyphicon-credit-card"></span>
+&nbsp; Metode Pembayaran :</p>
+<ul>
+<li>Tunai Maupun Digital</li>
+<li>Via OVO, DANA, LinkAja, Doku, Dll</li>
+</ul>
+</small>
+<br><br>
+<center><img src="img/logo.png" class="img-responsive" style="width:120px;" />
+</center>
+</div>
+</div>
+<br>
+<center><button style="width:30%; background:#FF8000; border:none; border-radius:0px;" type="button" class="btn btn-danger" data-dismiss="modal"><b><span class="	glyphicon glyphicon-remove"></span> TUTUP</b></button></center>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script src="b3/js/bootstrap.min.js"></script>
+<center><p style="font-size:11px;">&copy; Copyright  <script type='text/javascript'>document.write(new Date().getFullYear());</script> Tifad.Net | All Right Reserved
+</p></center>
+<script> 
+    window.intergramId = "";
+    window.intergramCustomizations = {
+        titleClosed: 'Chat di sini !',
+        titleOpen: 'Online',
+        introMessage: 'Selamat datang di Ryouta Kios Layanan Internet Hotspot Internetan sepuasnya tanpa kehabisan KUOTA!',
+        autoResponse: 'Silahkan tunggu sebentar, Admin akan membalas secepatnya!',
+        autoNoResponse: 'Saya sedang offline,mohon untuk menunggu, atau langsung WA saja ke 081252220024' +
+                        'and no response was received',
+        mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+        alwaysUseFloatingButton: false // Use the mobile floating button also on large screens
+    };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script> 
+
+</body>
+</html>
+</html>
+</html>

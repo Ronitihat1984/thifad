@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cara Aktivasi Voucher</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+
+<body background="img/bg.jpg"> 
+<nav class="navbar navbar-default example6 navbar-fixed-top">
+
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed tombol-nav" data-toggle="collapse" data-target="#navbar6">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand text-hide" href="login.html">Brand Text
+</a>
+</div>
+<div id="navbar6" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right ">
+$(if login-by)
+<li> <a href="status.html">Status</a><li>
+$(else)
+<li> <a href="login.html">Login</a><li>
+$(endif)
+<li><a href="paket.html" class="tanpa-link">Beli Voucher</a></li>
+<li><a href="rumah.html" class="tanpa-link">Home Internet</a></li>
+
+<li class="dropdown">
+<a class="dropdown-toggle dodown link-aktif" data-toggle="dropdown" href="#">Bantuan
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="aktivasi.html" class="link-aktif">Ganti Akun</a></li>
+<li><a href="faq.html" class="tanpa-link">FAQ</a></li>
+<li><a href="support.html" class="tanpa-link">Tentang Kami</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 box-utama">
+        <div class="jumbroton">
+                <fieldset class="fieldset title">
+                    <legend align="center" class="legend">
+                        <span class="text-center">SELAMAT DATANG DI LAYANAN GANTI PASSWORD</span>
+                    </legend>
+                </fieldset>
+                <div class="paket">
+                <div class="panel border-panel2 text-center">
+                    <div class="panel-heading bg-panel2">
+                        <h6>GUNAKAN DENGAN SEBAIK-BAIKNYA </h6>
+                    </div>
+                    <div class="panel-body">
+                        Silahkan KLik Tombol UBAH Untuk Untuk dapat menggubah AKUN anda
+                    </div>
+                    <div class="panel-footer">
+                        <p><button class="btn btn-success beli" data-toggle="modal" data-target="#modal-signup">UBAH</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center copyright">
+                <fieldset class="fieldset">
+                    <legend align="center" class="legend">
+                        <span class="icon-copyright copyright">Tifad.Net 2020</span>
+                    </legend>
+                </fieldset>
+                <div class="cs">
+                    <h4>Kp. Cimangguu Rt.17 Rw.07 Desa Citumenggung Bojong</h4>
+                    CS : <span class="icon-whatsapp">081282252065</span>
+                </div>
+            </div>
+            <div id="modal-signup" class="modal fade" role="dialog" data-backdrop="static">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title text-center">GANTI PASSWORD</h4>
+                        </div>
+                        <form id="form-signup" action="javascript:signup();">
+                            <div class="modal-body text-left">
+                                <div class="form-group">
+                                    <input id="nomor" class="form-control" type="text" placeholder="no. hp" pattern="[0-9-]+" required title="karakter yg diperbolehkan 0-9">
+                                </div>
+                                <div class="form-group input-group">
+                                    <span class="input-group-addon">mac</span>
+                                    <input id="mac" class="form-control" type="text" value="$(mac)" readonly="readonly">
+                                </div>
+                                <div class="form-group">
+                                    <input id="username" class="form-control" type="text" placeholder="username" pattern="[A-z0-9]{4,20}" required title="minimal 4 karakter yg diperbolehkan a-z A-Z 0-9 tanpa spasi">
+                                </div>
+                                <div class="form-group">
+                                    <input id="paket" class="form-control" type="text" placeholder="Masukan Passward Lama Anda" pattern="[A-z0-9]{4,20}" required title="minimal 4 karakter yg diperbolehkan a-z A-Z 0-9 tanpa spasi">
+                                </div>
+                                <div class="form-group">
+                                    <input id="password1" class="form-control" type="password" placeholder="password" autocomplete="off" pattern=".{3,}" required title="minimal 3 karakter">
+                                </div>
+                                <div class="form-group">
+                                    <div id="validate-status"></div>
+                                    <input id="password2" class="form-control" type="password" placeholder="ulangi password" autocomplete="off" pattern=".{3,}" required title="minimal 3 karakter">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" required="required">
+                                        <span class="check">Saya setuju dengan <a href="tos.html" target="_blank">syarat &amp; ketentuan</a> @Tifad.Netk</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="proses" type="submit" class="btn btn-success btn-md pull-right">PROSES</button>
+                                <button class="btn btn-warning btn-md pull-left" data-dismiss="modal">BATAL</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="confirm" class="modal fade" role="dialog" data-backdrop="static">
+                <div class="modal-dialog modal-sm">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <p></p>
+                            <p>Permintaan Anda berhasil terkirim, silahkan tunggu beberapa menit.</p>
+                            <button type="button" class="btn btn-success center-block" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<script src="js/signup.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="b3/js/bootstrap.min.js"></script>
+<script type="text/javascript"src="js/all.min.js"></script>
+<script type="text/javascript"src="js/sandi.js"></script>
+<center><p style="font-size:11px;">&copy; Copyright  <script type='text/javascript'>document.write(new Date().getFullYear());</script> Ryouta Kios | All Right Reserved
+</p></center>
+
+<script> 
+    window.intergramId = "1431019018";
+    window.intergramCustomizations = {
+        titleClosed: 'Chat di sini !',
+        titleOpen: 'Online',
+        introMessage: 'Selamat datang di Ryouta Kios Layanan Internet Hotspot Internetan sepuasnya tanpa kehabisan KUOTA!',
+        autoResponse: 'Silahkan tunggu sebentar, Admin akan membalas secepatnya!',
+        autoNoResponse: 'Saya sedang offline,mohon untuk menunggu, atau langsung WA saja ke 081252220024' +
+                        'and no response was received',
+        mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+        alwaysUseFloatingButton: false // Use the mobile floating button also on large screens
+    };
+</script>
+<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script> 
+</body>
+</html>
